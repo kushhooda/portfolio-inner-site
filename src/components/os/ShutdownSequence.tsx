@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import neverGiveUp from '../../assets/pictures/neverGiveUp.jpg';
-import eePic from '../../assets/pictures/ee.jpg';
 export interface ShutdownSequenceProps {
     numShutdowns: number;
     setShutdown: React.Dispatch<React.SetStateAction<boolean>>;
@@ -39,9 +37,9 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     };
 
     const NORMAL_SHUTDOWN = `Beginning Pre-Shutdown Sequence... ${_F}
-    Connecting to HHOS01/13:2000.${_F}.${_F}.${_F}
+    Connecting to KHOS01/13:2000.${_F}.${_F}.${_F}
     |
-    Established connection to HH0S01/13:2000, attempting data transfer.
+    Established connection to KHOS01/13:2000, attempting data transfer.
     |
     ${_F}
     |Analyzing data... Done.| ${_F}
@@ -50,16 +48,16 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     |[${getTime()} START]| .${_F}.....${_X}.|............|.${_S}.|......|.${_S}...........${_M} |[Transfer Failed.]|
 
 
-    |(HHOS01/13:200:60099) [DEP_ANALYTICS_SERVER_ON_AFTER_SETUP_MIDDLEWARE] InvalidFormatting: 'onAnalyticsConversion' option received invalid parameters. Please contact a server administrator to resolve the issue.|
+    |(KHOS01/13:200:60099) [DEP_ANALYTICS_SERVER_ON_AFTER_SETUP_MIDDLEWARE] InvalidFormatting: 'onAnalyticsConversion' option received invalid parameters. Please contact a server administrator to resolve the issue.|
     ${_F}
-    |(HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:00]|
-    |(HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:01]
-    (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:03]
-    (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:05]
-    (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:08]
-    (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:12]
-    (HHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:14]
-    FATAL ERROR: (HHOS01/13:200:60099) Server became unresponsive and the transfer failed. Unable to shutdown computer. 
+    |(KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:00]|
+    |(KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:01]
+    (KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:03]
+    (KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:05]
+    (KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:08]
+    (KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:12]
+    (KHOS01/13:200:60099) [SOCKET_FAILED_TO_RESPOND] Connection Refused: Reconnecting... [${getTime()}:14]
+    FATAL ERROR: (KHOS01/13:200:60099) Server became unresponsive and the transfer failed. Unable to shutdown computer.
     |
     Aborting shutdown sequence and rebooting.
 
@@ -84,7 +82,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
     Did you not read the last message?${_S} This computer will A${_F}L${_F}W${_F}A${_F}Y${_F}S${_F} reboot, the shutdown sequence is just here for show. It's not actually doing anything.
     ${_M}
     I literally spent months on this website to give you other things to do.
-    You can play DOOM, Oregon Trail, Scrabble... but all you wanna do is shut the computer down.
+    You can play DOOM, Oregon Trail, Wordle... but all you wanna do is shut the computer down.
     ${_L}
     |Goodbye Again!|
     ${_M}
@@ -260,7 +258,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
 
     return ee ? (
         <div style={styles.imageContainer}>
-            <img src={eePic} style={styles.img} alt="" />
+            <p style={styles.easterEggText}>🎉 You found the easter egg! DM me on Instagram <a href="https://instagram.com/whykushh" target="_blank" rel="noreferrer" style={{ color: '#7ecfd4' }}>@whykushh</a></p>
         </div>
     ) : loading ? (
         <div style={styles.shutdown}>
@@ -268,7 +266,7 @@ const ShutdownSequence: React.FC<ShutdownSequenceProps> = ({
         </div>
     ) : numShutdowns === 10 ? (
         <div style={styles.imageContainer}>
-            <img src={neverGiveUp} style={styles.img} alt="" />
+            <p style={styles.easterEggText}>Never gonna give you up... 💿</p>
         </div>
     ) : (
         <div style={styles.shutdown}>
@@ -297,9 +295,11 @@ const styles: StyleSheetCSS = {
         backgroundColor: '#1d2e2f',
         padding: 64,
     },
-    img: {
-        width: 1000,
-        height: 700,
+    easterEggText: {
+        color: 'white',
+        fontFamily: 'monospace',
+        fontSize: 28,
+        textAlign: 'center',
     },
 };
 
