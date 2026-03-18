@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router';
 import software from '../../assets/pictures/projects/software.gif';
-import art from '../../assets/pictures/projects/art.gif';
-import music from '../../assets/pictures/projects/music.gif';
 
 export interface ProjectsProps {}
 
@@ -21,19 +19,10 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({
     route,
     iconStyle,
 }) => {
-    const [, setIsHovering] = useState(false);
     const navigation = useNavigate();
 
     const handleClick = () => {
         navigation(`/projects/${route}`);
-    };
-
-    const onMouseEnter = () => {
-        setIsHovering(true);
-    };
-
-    const onMouseLeave = () => {
-        setIsHovering(false);
     };
 
     return (
@@ -41,8 +30,6 @@ const ProjectBox: React.FC<ProjectBoxProps> = ({
             onMouseDown={handleClick}
             className="big-button-container"
             style={styles.projectLink}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
         >
             <div style={styles.projectLinkLeft}>
                 <img
@@ -68,36 +55,34 @@ const Projects: React.FC<ProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
             <h1>Projects</h1>
-            <h3>& Hobbies</h3>
+            <h3>& Work</h3>
             <br />
             <p>
-                Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
+                Below are some of the projects I've built and designed across
+                websites, apps, and software. Click any category to dive in.
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
                 <ProjectBox
                     icon={software}
                     iconStyle={styles.computerIcon}
-                    title="Software"
-                    subtitle="PROJECTS"
+                    title="Websites"
+                    subtitle="DESIGN & DEVELOPMENT"
                     route="software"
                 />
                 <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
+                    icon={software}
+                    iconStyle={styles.computerIcon}
+                    title="Apps"
+                    subtitle="MOBILE & WEB APPS"
+                    route="software"
                 />
                 <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
+                    icon={software}
+                    iconStyle={styles.computerIcon}
+                    title="Software"
+                    subtitle="TOOLS & PLATFORMS"
+                    route="software"
                 />
             </div>
         </div>
@@ -116,7 +101,6 @@ const styles: StyleSheetCSS = {
         cursor: 'pointer',
         width: '100%',
         boxSizing: 'border-box',
-
         alignItems: 'center',
         justifyContent: 'space-between',
     },
@@ -126,28 +110,16 @@ const styles: StyleSheetCSS = {
     },
     projectLinkImage: {
         width: 48,
-        // height: 48,
         marginRight: 38,
     },
     projectLinkLeft: {
         marginLeft: 16,
         alignItems: 'center',
     },
+    projectLinkRight: {},
     computerIcon: {
         width: 56,
         height: 56,
-    },
-    musicIcon: {
-        width: 48,
-        height: 48,
-    },
-    arrowIcon: {
-        width: 48,
-        height: 48,
-    },
-    artIcon: {
-        width: 21 * 2,
-        height: 37 * 2,
     },
 };
 
