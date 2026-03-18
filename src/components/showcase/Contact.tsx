@@ -57,7 +57,7 @@ const Contact: React.FC<ContactProps> = (props) => {
         try {
             setIsLoading(true);
             const res = await fetch(
-                'https://api.bykush.dev/api/contact',
+                'https://formspree.io/f/mlgparaj',
                 {
                     method: 'POST',
                     headers: {
@@ -137,8 +137,8 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:kush9hooda@gmail.com">
-                        kush9hooda@gmail.com
+                    <a href="mailto:hello@bykush.dev">
+                        hello@bykush.dev
                     </a>
                 </p>
 

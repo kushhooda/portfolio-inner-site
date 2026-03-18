@@ -24,8 +24,8 @@ const About: React.FC<AboutProps> = (props) => {
                     building it. If you have any questions or comments, feel
                     free to contact me using{' '}
                     <Link to="/contact">this form</Link> or shoot me an email at{' '}
-                    <a href="mailto:kush9hooda@gmail.com">
-                        kush9hooda@gmail.com
+                    <a href="mailto:hello@bykush.dev">
+                        hello@bykush.dev
                     </a>
                 </p>
             </div>
@@ -92,8 +92,8 @@ const About: React.FC<AboutProps> = (props) => {
                     them. You can reach me through the{' '}
                     <Link to="/contact">contact page</Link> or shoot me an email
                     at{' '}
-                    <a href="mailto:kush9hooda@gmail.com">
-                        kush9hooda@gmail.com
+                    <a href="mailto:hello@bykush.dev">
+                        hello@bykush.dev
                     </a>
                 </p>
             </div>
