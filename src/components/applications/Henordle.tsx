@@ -16,7 +16,7 @@ const WordleApp: React.FC<WordleAppProps> = (props) => {
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2022 Kush Hooda'}
+            bottomLeftText={'© Copyright 2026 Kush Hooda'}
         >
             <div className="site-page">
                 <Wordle />

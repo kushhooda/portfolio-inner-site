@@ -64,7 +64,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <MusicPlayer
                 src={house}
                 title="Timeless"
-                subtitle="Kush Hooda - 2022"
+                subtitle="Kush Hooda - 2026"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
@@ -150,7 +150,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <MusicPlayer
                 src={dnb}
                 title="Break [Demo]"
-                subtitle="Kush Hooda - 2019/2022"
+                subtitle="Kush Hooda - 2019/2026"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
@@ -168,7 +168,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <MusicPlayer
                 src={dnbDrums}
                 title="Break [Drums and Sub]"
-                subtitle="Kush Hooda - 2019/2022"
+                subtitle="Kush Hooda - 2019/2026"
                 currentSong={currentSong}
                 setCurrentSong={setCurrentSong}
             />
