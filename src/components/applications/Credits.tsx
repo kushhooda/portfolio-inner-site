@@ -12,34 +12,19 @@ const CREDITS = [
     },
     {
         title: 'Modeling & Texturing',
-        rows: [
-            ['Kush Hooda', 'Texturing, Composition, & UV'],
-            ['Mickael Boitte', 'Computer Model'],
-            ['Sean Nicolas', 'Environment Models'],
-        ],
+        rows: [['Kush Hooda', 'All']],
     },
     {
         title: 'Sound Design',
-        rows: [
-            ['Kush Hooda', 'Mixing, Composition, & Foley'],
-            ['Sound Cassette', 'Office Ambience'],
-            ['Windows 95 Startup Sound', 'Microsoft'],
-        ],
+        rows: [['Kush Hooda', 'All']],
     },
     {
         title: 'Special Thanks',
-        rows: [
-            ['Bruno Simon', 'SimonDev'],
-            ['Lorelei Kravinsky', 'Scott Bass'],
-            ['Trey Briccetti', 'Mom, Dad & Angela'],
-        ],
+        rows: [['Kush Hooda', 'All']],
     },
     {
         title: 'Inspiration',
-        rows: [
-            ['Bruno Simon', 'Jesse Zhou'],
-            ['Pink Yellow', 'Vivek Patel'],
-        ],
+        rows: [['Kush Hooda', 'All']],
     },
 ];
 
