@@ -8,7 +8,7 @@ import ShutdownSequence from './ShutdownSequence';
 import Wordle from '../applications/Henordle';
 import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
-import Scrabble from '../applications/Scrabble';
+
 import { IconName } from '../../assets/icons';
 import Credits from '../applications/Credits';
 
@@ -48,12 +48,7 @@ const APPLICATIONS: {
         shortcutIcon: 'doomIcon',
         component: Doom,
     },
-    scrabble: {
-        key: 'scrabble',
-        name: 'Scrabble',
-        shortcutIcon: 'scrabbleIcon',
-        component: Scrabble,
-    },
+
     wordle: {
         key: 'wordle',
         name: 'Wordle',
