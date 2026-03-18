@@ -58,6 +58,16 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
                         <div style={styles.insetLinks}>
                             <Link
                                 containerStyle={styles.insetLink}
+                                to="projects/websites"
+                                text="WEBSITES"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
+                                to="projects/apps"
+                                text="APPS"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
                                 to="projects/software"
                                 text="SOFTWARE"
                             />
