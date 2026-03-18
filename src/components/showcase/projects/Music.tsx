@@ -7,8 +7,8 @@ import edge from '../../../assets/audio/edge_unmastered.mp3';
 import dnb from '../../../assets/audio/break.mp3';
 // @ts-ignore
 import dnbDrums from '../../../assets/audio/dnb_drop_drums.mp3';
-import houseProject from '../../../assets/pictures/projects/audio/houseProject.png';
-import dnbDrumsProject from '../../../assets/pictures/projects/audio/dnbDrumsProject.png';
+
+
 import { MusicPlayer } from '../../general';
 
 export interface MusicProjectsProps {}
@@ -72,7 +72,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             <br />
             <br />
             <div className="captioned-image">
-                <img src={houseProject} alt="" />
+                
                 <p>
                     <sub>
                         <b>Figure 1:</b> A screenshot of the project file of
@@ -174,7 +174,7 @@ const MusicProjects: React.FC<MusicProjectsProps> = (props) => {
             />
             <br />
             <div className="captioned-image">
-                <img src={dnbDrumsProject} alt="" />
+                
                 <p>
                     <sub>
                         <b>Figure 2:</b> Drums and sub for the track Break. See

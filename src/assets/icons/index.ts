@@ -16,7 +16,6 @@ import trailIcon from './trailIcon.png';
 import windowGameIcon from './windowGameIcon.png';
 import windowExplorerIcon from './windowExplorerIcon.png';
 import windowsStartIcon from './windowsStartIcon.png';
-import scrabbleIcon from './scrabbleIcon.png';
 import close from './close.png';
 
 const icons = {
@@ -31,7 +30,6 @@ const icons = {
     volumeOn: volumeOn,
     volumeOff: volumeOff,
     credits: credits,
-    scrabbleIcon: scrabbleIcon,
     henordleIcon: henordleIcon,
     close: close,
     windowGameIcon: windowGameIcon,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import girlRun from '../../../assets/pictures/projects/art/girl-run.gif';
+
 
 export interface ArtProjectsProps {}
 
